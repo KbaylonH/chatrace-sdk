@@ -18,6 +18,14 @@ class Contacts
         return $this->client->get("contacts/{$id}");
     }
 
+    public function getByPhone(string $phone)
+    {
+        return $this->client->get("contacts/find_by_custom_field", [
+            'field_id' => 'phone',
+            'value'    => $phone,
+        ]);
+    }
+
     public function create(array $data)
     {
         return $this->client->post("contacts", $data);
