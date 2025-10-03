@@ -1,0 +1,22 @@
+{
+    "name": "kevinwbh/chatrace",
+    "description": "SDK for Chatrace Services",
+    "type": "library",
+    "require": {
+        "php": "^7.2|^8.0|^8.1",
+        "guzzlehttp/guzzle": "^7"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Kevinwbh\\Chatrace\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Kevin William Baylón Huerta",
+            "email": "kbaylonh@outlook.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
