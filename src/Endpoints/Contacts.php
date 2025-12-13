@@ -52,8 +52,7 @@ class Contacts
         $response = $this->client->post("contacts/{$id}/send_content", $data);
 
         if($response->successful()){
-            $result = $response->json();
-            return $result['success'];
+            return $response->json();
         }
 
         throw new \Exception("Failed to send content to contact");
